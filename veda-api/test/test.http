@@ -1,0 +1,19 @@
+curl -X POST http://localhost:3000/patients \
+
+   -H "Content-Type: application/json" \
+
+   -d '{
+
+     "name": "Amit Kumar",
+
+     "age": 45,
+
+     "gender": "M",
+
+     "mobile": "9876543210",
+
+     "address": "Sector 62, Mohali",
+
+     "hospitalId": "698ec7576584474d9943cf95"
+
+   }'

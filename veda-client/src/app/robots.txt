@@ -1,0 +1,21 @@
+import { MetadataRoute } from 'next';
+
+export default function robots(): MetadataRoute.Robots {
+  // ⚠️ Replace this with your actual live domain when you launch
+  const baseUrl = 'https://vedaerp.com'; 
+
+  return {
+    rules: {
+      userAgent: '*',
+      allow: '/',
+      // 🛑 BLOCK Google from crawling your app internals and auth pages
+      disallow: [
+        '/dashboard/', 
+        '/dashboard/*', 
+        '/api/', 
+        '/api/*'
+      ],
+    },
+    sitemap: `${baseUrl}/sitemap.xml`,
+  };
+}

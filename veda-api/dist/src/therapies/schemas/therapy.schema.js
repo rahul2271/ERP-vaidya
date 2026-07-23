@@ -1,0 +1,67 @@
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.TherapySchema = exports.Therapy = void 0;
+const mongoose_1 = require("@nestjs/mongoose");
+const mongoose_2 = require("mongoose");
+let Therapy = class Therapy {
+    patientName;
+    patientId;
+    therapyName;
+    therapistId;
+    roomNumber;
+    date;
+    time;
+    status;
+    hospitalId;
+};
+exports.Therapy = Therapy;
+__decorate([
+    (0, mongoose_1.Prop)({ required: true }),
+    __metadata("design:type", String)
+], Therapy.prototype, "patientName", void 0);
+__decorate([
+    (0, mongoose_1.Prop)({ type: mongoose_2.Types.ObjectId, ref: 'User' }),
+    __metadata("design:type", mongoose_2.Types.ObjectId)
+], Therapy.prototype, "patientId", void 0);
+__decorate([
+    (0, mongoose_1.Prop)({ required: true }),
+    __metadata("design:type", String)
+], Therapy.prototype, "therapyName", void 0);
+__decorate([
+    (0, mongoose_1.Prop)({ type: mongoose_2.Types.ObjectId, ref: 'User', required: true }),
+    __metadata("design:type", mongoose_2.Types.ObjectId)
+], Therapy.prototype, "therapistId", void 0);
+__decorate([
+    (0, mongoose_1.Prop)(),
+    __metadata("design:type", String)
+], Therapy.prototype, "roomNumber", void 0);
+__decorate([
+    (0, mongoose_1.Prop)({ required: true }),
+    __metadata("design:type", Date)
+], Therapy.prototype, "date", void 0);
+__decorate([
+    (0, mongoose_1.Prop)(),
+    __metadata("design:type", String)
+], Therapy.prototype, "time", void 0);
+__decorate([
+    (0, mongoose_1.Prop)({ required: true, enum: ['PENDING', 'IN_PROGRESS', 'COMPLETED'], default: 'PENDING' }),
+    __metadata("design:type", String)
+], Therapy.prototype, "status", void 0);
+__decorate([
+    (0, mongoose_1.Prop)({ required: true }),
+    __metadata("design:type", String)
+], Therapy.prototype, "hospitalId", void 0);
+exports.Therapy = Therapy = __decorate([
+    (0, mongoose_1.Schema)({ timestamps: true })
+], Therapy);
+exports.TherapySchema = mongoose_1.SchemaFactory.createForClass(Therapy);
+//# sourceMappingURL=therapy.schema.js.map

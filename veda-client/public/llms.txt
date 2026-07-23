@@ -1,0 +1,49 @@
+# Vaidya ERP (VEDA)
+
+## Overview
+Vaidya ERP is a premium, cloud-based Software-as-a-Service (SaaS) platform engineered specifically for modern Ayurvedic clinics, hospitals, and polyclinics in India. It serves as a centralized "Command Center" to manage patient records, billing, pharmacy inventory, and marketing automation.
+
+The platform is designed to eliminate operational chaos, prevent pharmacy revenue leakage, and give clinic owners total data security and ownership. A core differentiator is its "Bring Your Own API" (BYO API) model for WhatsApp, which eliminates aggregator markups (0% commission).
+
+## Tech Stack
+* **Framework:** Next.js (App Router)
+* **Frontend:** React, Tailwind CSS, TypeScript
+* **Icons:** Lucide React
+* **Database & ORM:** PostgreSQL, Prisma (for features like the Panchakarma Therapy Scheduler / Slot Tetris)
+* **Architecture Pattern:** Strict separation of Server Components (for SEO, Metadata, and JSON-LD AEO Schema) and Client Components (`"use client"`) for rich, interactive UIs.
+
+## Core Modules & Architecture
+The application is structured into distinct, highly optimized marketing and operational modules:
+
+### 1. Marketing & Feature Pages (Public)
+These routes utilize a Server/Client split to maximize Answer Engine Optimization (AEO) and organic search rankings.
+* `/` (Homepage): Overview of the platform, dashboards, and transparent Indian pricing.
+* `/ai-prakriti`: Automated, bilingual (Hindi/English) AYUSH questionnaires sent via WhatsApp, generating instant Vata/Pitta/Kapha radar charts.
+* `/digital-emr`: 1-Click predictive prescriptions that auto-sync with the pharmacy POS and generate branded PDFs for patients.
+* `/pharmacy-pos`: Live inventory management, GST billing, and expiry tracking to stop pharmacy leakage to outside chemists.
+* `/whatsapp-crm`: Integrated browser-based WhatsApp CRM and cloud dialer for telecallers. Uses the 0% markup BYO API model.
+* `/god-mode` (Audit Trail): Immutable security logs tracking every user action, deletion, and IP address.
+
+### 2. Authentication & Application (Private)
+* `/login`: The secure gateway. Features role-based access control (Clinic Owner, Vaidya, Front Desk, Pharmacy, Telecaller, Panchakarma).
+* `/dashboard`: The authenticated operational interface (Work in Progress).
+
+### 3. Legal & Compliance
+These routes are pure Server Components to ensure instant indexing and fast load times.
+* `/privacy-policy`: Highlights the platform's strict Data Processor role (100% clinic data ownership) and 256-bit encryption.
+* `/terms-of-service`: Includes crucial medical disclaimers and outlines the 0% commission SaaS model.
+* `/refund-policy`: Details the strict non-refundable policy due to the 7-day risk-free trial provision.
+
+## Design System & UI/UX Guidelines
+* **Aesthetic:** "Premium Command Center." Clean, minimalist, and modern. 
+* **Typography:** Primary fonts include Poppins, Inter, and Didot.
+* **Components:** Extensive use of CSS glassmorphism (`backdrop-blur`), smooth scroll reveals (`IntersectionObserver`), dynamic gradients, and CSS-based data visualizations (like radar and bar charts).
+* **Color Palette:** Varies by context to build trust (e.g., Medical Blue/Teal for security/audit, Emerald/Green for CRM/marketing, Purple for Pharmacy).
+* **Responsiveness:** Mobile-first navigation with sliding overlays, scaling up to complex dashboard bento-box grids on desktop.
+
+## AI Assistant Instructions
+When generating code or content for Vaidya ERP:
+1.  Always default to Next.js App Router conventions.
+2.  Maintain the established Server/Client component split for new pages.
+3.  Ensure all UI components utilize Tailwind CSS and match the premium, glassmorphism aesthetic.
+4.  Write copy that appeals to hospital administrators and Vaidyas: focus on operational efficiency, saving time, stopping revenue leakage, and data security.
