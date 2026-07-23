@@ -176,10 +176,11 @@ export default function BlogAdminPage() {
               <Field label="Slug (optional — auto-generated from title)" value={form.slug} onChange={(v: string) => setForm({ ...form, slug: v })} />
   <Field label="Excerpt" value={form.excerpt} onChange={(v: string) => setForm({ ...form, excerpt: v })} textarea rows={2} />
   <Field label="Content (supports # headings, **bold**, *italic*, [links](url), - lists)" value={form.content} onChange={(v: string) => setForm({ ...form, content: v })} textarea rows={10} mono />
-              <Field label="Cover image URL (optional)" value={form.coverImage} onChange={v => setForm({ ...form, coverImage: v })} />
-              <div className="grid grid-cols-2 gap-4">
-                <Field label="Tags (comma-separated)" value={form.tags} onChange={v => setForm({ ...form, tags: v })} />
-                <Field label="Author name" value={form.authorName} onChange={v => setForm({ ...form, authorName: v })} />
+              <Field label="Cover image URL (optional)" value={form.coverImage} onChange={(v: string) => setForm({ ...form, coverImage: v })} />
+<div className="grid grid-cols-2 gap-4">
+  <Field label="Tags (comma-separated)" value={form.tags} onChange={(v: string) => setForm({ ...form, tags: v })} />
+  <Field label="Author name" value={form.authorName} onChange={(v: string) => setForm({ ...form, authorName: v })} />
+</div>
               </div>
 
               <div className="pt-4 border-t border-ink-100">
