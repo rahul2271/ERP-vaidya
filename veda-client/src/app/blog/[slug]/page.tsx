@@ -92,7 +92,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   };
 
   return (
-    <div className="pt-[200px] min-h-screen bg-[#F6F9F8] pb-24 px-6">
+    <div className="pt-[300px] min-h-screen bg-[#F6F9F8] pb-24 px-6">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
 
       <div className="max-w-2xl mx-auto">
