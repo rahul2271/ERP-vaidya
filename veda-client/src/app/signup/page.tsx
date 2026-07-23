@@ -170,14 +170,14 @@ function SignupForm() {
               <div>
                 <p className="text-xs font-semibold text-ink-500 uppercase tracking-wide mb-2.5">Clinic details</p>
                 <div className="space-y-3">
-                  <Field icon={Building2} placeholder="Clinic / hospital name" value={form.hospitalName} onChange={v => update("hospitalName", v)} required />
+                  <Field icon={Building2} placeholder="Clinic / hospital name" value={form.hospitalName} onChange={(v: string) => update("hospitalName", v)} required />
                   <div className="grid grid-cols-2 gap-3">
-                    <Field icon={Mail} type="email" placeholder="Clinic email" value={form.hospitalEmail} onChange={v => update("hospitalEmail", v)} required />
-                    <Field icon={Phone} placeholder="Clinic phone" value={form.phone} onChange={v => update("phone", v)} required />
+                    <Field icon={Mail} type="email" placeholder="Clinic email" value={form.hospitalEmail} onChange={(v: string) => update("hospitalEmail", v)} required />
+                    <Field icon={Phone} placeholder="Clinic phone" value={form.phone} onChange={(v: string) => update("phone", v)} required />
                   </div>
                   <div className="grid grid-cols-2 gap-3">
-                    <Field icon={MapPin} placeholder="City" value={form.city} onChange={v => update("city", v)} required />
-                    <Field icon={MapPin} placeholder="State" value={form.state} onChange={v => update("state", v)} required />
+                    <Field icon={MapPin} placeholder="City" value={form.city} onChange={(v: string) => update("city", v)} required />
+                    <Field icon={MapPin} placeholder="State" value={form.state} onChange={(v: string) => update("state", v)} required />
                   </div>
                 </div>
               </div>
@@ -185,11 +185,11 @@ function SignupForm() {
               <div>
                 <p className="text-xs font-semibold text-ink-500 uppercase tracking-wide mb-2.5">Your admin login</p>
                 <div className="space-y-3">
-                  <Field icon={User} placeholder="Your full name" value={form.adminName} onChange={v => update("adminName", v)} required />
-                  <Field icon={Mail} type="email" placeholder="Your email (used to log in)" value={form.adminEmail} onChange={v => update("adminEmail", v)} required />
+                  <Field icon={User} placeholder="Your full name" value={form.adminName} onChange={(v: string) => update("adminName", v)} required />
+                  <Field icon={Mail} type="email" placeholder="Your email (used to log in)" value={form.adminEmail} onChange={(v: string) => update("adminEmail", v)} required />
                   <div className="grid grid-cols-2 gap-3">
-                    <Field icon={Phone} placeholder="Your mobile" value={form.adminMobile} onChange={v => update("adminMobile", v)} required />
-                    <Field icon={Lock} type="password" placeholder="Choose a password" value={form.adminPassword} onChange={v => update("adminPassword", v)} required />
+                    <Field icon={Phone} placeholder="Your mobile" value={form.adminMobile} onChange={(v: string) => update("adminMobile", v)} required />
+                    <Field icon={Lock} type="password" placeholder="Choose a password" value={form.adminPassword} onChange={(v: string) => update("adminPassword", v)} required />
                   </div>
                 </div>
               </div>
