@@ -60,7 +60,7 @@ export default async function BlogIndexPage({ searchParams }: { searchParams: Pr
   const { posts } = await getPosts(tag);
 
   return (
-    <div className="min-h-screen bg-[#F6F9F8] pt-32 pb-24 px-6">
+    <div className="pt-[200px] min-h-screen bg-[#F6F9F8] pb-24 px-6">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-primary-50 border border-primary-200 text-primary-700 rounded-full text-[11px] font-bold mb-6 w-fit mx-auto tracking-wide">
