@@ -207,7 +207,7 @@ export default function BlogAdminPage() {
               </button>
             </div>
           </div>
-        </div>
+        
       )}
     </div>
   );
