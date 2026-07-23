@@ -172,10 +172,10 @@ export default function BlogAdminPage() {
             <h3 className="font-bold text-ink-900 text-lg mb-6">{editing._id ? "Edit post" : "New post"}</h3>
 
             <div className="space-y-4">
-              <Field label="Title" value={form.title} onChange={v => setForm({ ...form, title: v })} />
-              <Field label="Slug (optional — auto-generated from title)" value={form.slug} onChange={v => setForm({ ...form, slug: v })} />
-              <Field label="Excerpt" value={form.excerpt} onChange={v => setForm({ ...form, excerpt: v })} textarea rows={2} />
-              <Field label="Content (supports # headings, **bold**, *italic*, [links](url), - lists)" value={form.content} onChange={v => setForm({ ...form, content: v })} textarea rows={10} mono />
+              <Field label="Title" value={form.title} onChange={(v: string) => setForm({ ...form, title: v })} />
+              <Field label="Slug (optional — auto-generated from title)" value={form.slug} onChange={(v: string) => setForm({ ...form, slug: v })} />
+  <Field label="Excerpt" value={form.excerpt} onChange={(v: string) => setForm({ ...form, excerpt: v })} textarea rows={2} />
+  <Field label="Content (supports # headings, **bold**, *italic*, [links](url), - lists)" value={form.content} onChange={(v: string) => setForm({ ...form, content: v })} textarea rows={10} mono />
               <Field label="Cover image URL (optional)" value={form.coverImage} onChange={v => setForm({ ...form, coverImage: v })} />
               <div className="grid grid-cols-2 gap-4">
                 <Field label="Tags (comma-separated)" value={form.tags} onChange={v => setForm({ ...form, tags: v })} />
