@@ -4,9 +4,9 @@ import { Calendar, Tag, ArrowRight, Newspaper } from "lucide-react";
 import { fetchWordPressPosts, isWordPressConfigured } from "@/utils/wordpress";
 
 export const metadata: Metadata = {
-  title: "Blog | VAIDYA ERP — Ayurvedic & Clinic Management Insights",
-  description: "Practical guides on running an Ayurvedic clinic or hospital in India — patient records, NABH-aligned documentation, GST billing, WhatsApp automation, and more.",
-  keywords: ["Ayurvedic clinic management blog", "NABH documentation guide", "clinic software India blog", "hospital management tips"],
+  title: "Ayurvedic Clinic Management Blog | VAIDYA ERP",
+  description: "Strategies to scale your Ayurvedic clinic, plug inventory leaks, cut WhatsApp costs, and automate patient follow-ups — from the VAIDYA ERP team.",
+  keywords: ["ayurvedic clinic management tips", "ayurveda business growth", "clinic automation blog India", "hospital management tips"],
 };
 
 // Normalized shape so the page renders identically regardless of source.

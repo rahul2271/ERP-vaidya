@@ -3,15 +3,14 @@ import WhatsAppCRMClient from "@/components/WhatsAppCRMClient"; // Update path i
 
 // 1. High-Intent, Feature-Specific Meta Data
 export const metadata: Metadata = {
-  title: "WhatsApp CRM & Clinic Marketing Automation | VAIDYA ERP",
-  description: "Automate patient follow-ups, appointment reminders, and diet charts. VAIDYA ERP features a built-in WhatsApp CRM with 0% message markup via our BYO API model.",
+  title: "Zero-Markup WhatsApp CRM for Clinics | VAIDYA ERP",
+  description: "Stop paying 300% API markups. Plug in your own Meta WhatsApp API and message patients directly — no aggregator tax, no per-message fees.",
   keywords: [
-    "Clinic WhatsApp CRM",
-    "Healthcare Marketing Automation",
-    "Ayurvedic Patient Follow-up Software",
-    "Bring Your Own WhatsApp API Clinic",
-    "Automated Appointment Reminders",
-    "Cloud Dialer for Clinics"
+    "whatsapp crm for clinics",
+    "bring your own whatsapp api clinic software",
+    "whatsapp aggregator alternative for clinics",
+    "whatsapp api healthcare India",
+    "clinic whatsapp automation"
   ],
   alternates: {
     canonical: "https://vaidyaerp.in/whatsapp-crm", // Adjust URL as needed

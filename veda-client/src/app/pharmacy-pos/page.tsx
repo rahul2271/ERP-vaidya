@@ -3,14 +3,14 @@ import PharmacyPOSClient from "@/components/PharmacyPOSClient"; // Update path i
 
 // 1. Revenue & Inventory-Focused Meta Data
 export const metadata: Metadata = {
-  title: "Ayurvedic Pharmacy POS & Inventory Management | VAIDYA ERP",
-  description: "Stop bleeding money on untracked inventory. VAIDYA ERP integrates digital prescriptions directly into a lightning-fast Pharmacy POS with live stock auto-deduction and GST billing.",
+  title: "Ayurvedic Pharmacy POS & Inventory Software | VAIDYA ERP",
+  description: "Auto-deduct stock when doctors prescribe. Track expiries, stop silent leaks, and run your Ayurvedic pharmacy counter from one connected system.",
   keywords: [
-    "Ayurvedic Pharmacy POS",
-    "Clinic Inventory Management Software",
-    "GST Billing Software for Clinics",
-    "Stop Pharmacy Leakage",
-    "Medicine Expiry Tracker Software",
+    "ayurvedic pharmacy software",
+    "pharmacy inventory management ayurveda",
+    "clinic pharmacy POS India",
+    "herbal medicine inventory software",
+    "ayurvedic pharmacy inventory software with expiry tracking",
     "Ayurvedic Hospital Billing System"
   ],
   alternates: {

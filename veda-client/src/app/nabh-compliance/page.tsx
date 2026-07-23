@@ -6,13 +6,13 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "NABH-Aligned Record Keeping | VAIDYA ERP",
-  description: "How VAIDYA ERP structures patient registration, admission, and discharge records to match NABH documentation standards — UHID, OPD/IPD/Day Care registers, and full discharge summaries.",
+  title: "NABH-Aligned OPD/IPD Records Software | VAIDYA ERP",
+  description: "Separate OPD, IPD, and Day Care registers with sequential numbering, one lifetime UHID, and full discharge summaries — built to NABH record-keeping standards.",
   keywords: [
-    "NABH documentation software",
-    "NABH patient records system",
-    "OPD IPD register software",
-    "UHID management system India",
+    "NABH compliant clinic software",
+    "OPD IPD software for ayurvedic clinics",
+    "UHID software",
+    "hospital accreditation software ayurveda",
     "NABH discharge summary software",
     "hospital record keeping software India",
   ],

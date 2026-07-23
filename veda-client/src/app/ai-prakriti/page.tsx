@@ -3,15 +3,14 @@ import AIPrakritiClient from "@/components/AIPrakritiClient"; // Update path if 
 
 // 1. Highly Specific, Feature-Driven Meta Data
 export const metadata: Metadata = {
-  title: "AI Prakriti Analysis & Digital Dosha Questionnaires | VAIDYA ERP",
-  description: "Save 10 minutes per patient. Send automated, bilingual AYUSH questionnaires via WhatsApp and generate instant Vata, Pitta, and Kapha radar charts on your dashboard.",
+  title: "AI Prakriti & Dosha Assessment Software | VAIDYA ERP",
+  description: "Digital AYUSH Prakriti quiz with instant Vata-Pitta-Kapha assessment. Standardize dosha analysis across your clinic with VAIDYA's AI dashboard.",
   keywords: [
-    "AI Prakriti Analysis",
-    "Digital Dosha Questionnaire",
-    "Automated AYUSH form WhatsApp",
-    "Ayurvedic Clinic Software",
-    "Prakriti Radar Chart Software",
-    "Ayurveda EMR Feature"
+    "prakriti assessment software",
+    "dosha analysis software",
+    "digital prakriti quiz",
+    "AI ayurveda diagnosis",
+    "vata pitta kapha software"
   ],
   alternates: {
     canonical: "https://vaidyaerp.in/ai-prakriti",

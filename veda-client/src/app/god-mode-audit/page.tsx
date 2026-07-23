@@ -3,14 +3,14 @@ import GodModeAuditClient from "@/components/GodModeAuditClient"; // Update path
 
 // 1. Security-Focused, High-Intent Meta Data
 export const metadata: Metadata = {
-  title: "God Mode Audit Trail & Clinic Security Software | VAIDYA ERP",
-  description: "Secure your clinic's data with VAIDYA ERP's God Mode. Catch deleted bills, track staff logins via IP, and maintain an immutable audit trail for total accountability.",
+  title: "Clinic Security & Audit Trail Software | VAIDYA ERP",
+  description: "Immutable audit logs track every user, action, and IP address. Know exactly who edited or deleted a record, in real time.",
   keywords: [
-    "Clinic Audit Trail Software",
-    "Secure Hospital Management Software",
-    "EMR Audit Logs",
-    "Track Deleted Invoices Clinic",
-    "Healthcare Staff Accountability Software",
+    "clinic data security software",
+    "clinic audit trail software India",
+    "hospital audit trail software",
+    "secure EMR India",
+    "anti-theft clinic software",
     "Ayurvedic Clinic Data Security"
   ],
   alternates: {

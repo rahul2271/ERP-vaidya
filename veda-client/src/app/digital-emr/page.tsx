@@ -3,14 +3,14 @@ import DigitalEMRClient from "@/components/DigitalEMRClient"; // Update path if 
 
 // 1. Bottom-of-the-Funnel, Feature-Specific Meta Data
 export const metadata: Metadata = {
-  title: "1-Click Digital EMR & WhatsApp Prescriptions | VAIDYA ERP",
-  description: "Stop pharmacy leakage and save doctor's time. Generate legally compliant Ayurvedic prescriptions in 1-click and push them directly to your Pharmacy POS and patient's WhatsApp.",
+  title: "Digital EMR & 1-Click Ayurvedic Prescriptions | VAIDYA",
+  description: "Generate Ayurvedic prescriptions and diet charts in one click. Predictive EMR remembers your drug combos and pushes therapies straight to the queue.",
   keywords: [
-    "Ayurvedic EMR",
-    "Digital Prescription Software",
-    "Send Prescription on WhatsApp",
-    "Pharmacy POS Integration",
-    "Stop Pharmacy Leakage Clinic",
+    "ayurvedic EMR software",
+    "digital prescription software ayurveda",
+    "electronic medical records ayurveda",
+    "ayurveda diet chart software",
+    "ayurvedic EMR software with whatsapp integration",
     "Ayurveda Clinic Management Software"
   ],
   alternates: {

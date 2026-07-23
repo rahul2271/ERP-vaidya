@@ -3,22 +3,23 @@ import HomeClient from "@/components/HomeClient"; // Update this path if needed
 
 // 1. Aggressive, Intent-Driven Meta Data
 export const metadata: Metadata = {
-  title: "Smart Ayurvedic Clinic Management Software | VAIDYA ERP",
-  description: "Automate your Ayurvedic hospital with VAIDYA ERP. Plug in your own Meta API with zero markup, manage live pharmacy inventory, and generate digital EMRs instantly.",
+  title: "Ayurvedic Clinic Management Software | VAIDYA ERP",
+  description: "Run your Ayurvedic clinic with zero-markup WhatsApp, live pharmacy inventory, and 1-click digital EMR. NABH-aligned records, built for Indian clinics.",
   keywords: [
     "Ayurvedic Clinic Management Software",
-    "Smart Clinic Software India",
-    "ABDM Compliant Clinic Software",
-    "Panchakarma Therapy Scheduler",
-    "Ayurvedic EMR",
-    "Pharmacy POS Ayurveda"
+    "ayurveda hospital software India",
+    "panchakarma software",
+    "clinic ERP India",
+    "zero commission clinic software",
+    "ayurvedic EMR software",
+    "bring your own whatsapp api clinic software"
   ],
   alternates: {
     canonical: "https://vaidyaerp.in",
   },
   openGraph: {
-    title: "VAIDYA ERP | Smart Clinic Management Software",
-    description: "The transparent, elegant command center built for modern Ayurveda. Stop losing 20% to aggregators.",
+    title: "VAIDYA ERP | Ayurvedic Clinic Management Software ",
+    description: "Run your Ayurvedic clinic with zero-markup WhatsApp, live pharmacy inventory, and 1-click digital EMR. NABH-aligned records, built for Indian clinics.",
     url: "https://vaidyaerp.in",
     siteName: "VAIDYA ERP",
     locale: "en_IN",
