@@ -186,9 +186,11 @@ export default function BlogAdminPage() {
               <div className="pt-4 border-t border-ink-100">
                 <p className="text-xs font-semibold text-ink-500 uppercase tracking-wide mb-3">SEO (optional overrides)</p>
                 <div className="space-y-3">
-                  <Field label="SEO title" value={form.seoTitle} onChange={v => setForm({ ...form, seoTitle: v })} />
-                  <Field label="SEO description" value={form.seoDescription} onChange={v => setForm({ ...form, seoDescription: v })} textarea rows={2} />
-                  <Field label="SEO keywords (comma-separated)" value={form.seoKeywords} onChange={v => setForm({ ...form, seoKeywords: v })} />
+                  <div className="space-y-3">
+  <Field label="SEO title" value={form.seoTitle} onChange={(v: string) => setForm({ ...form, seoTitle: v })} />
+  <Field label="SEO description" value={form.seoDescription} onChange={(v: string) => setForm({ ...form, seoDescription: v })} textarea rows={2} />
+  <Field label="SEO keywords (comma-separated)" value={form.seoKeywords} onChange={(v: string) => setForm({ ...form, seoKeywords: v })} />
+</div>
                 </div>
               </div>
 
