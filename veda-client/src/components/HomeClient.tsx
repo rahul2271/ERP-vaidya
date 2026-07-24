@@ -206,7 +206,7 @@ export default function HomePage() {
   };
 
   return (
-    <div className="min-h-screen font-sans selection:bg-primary-500/30 selection:text-primary-900 bg-[#FAFAFA] text-ink-900 overflow-x-hidden">
+    <div className="pt-[100px] min-h-screen font-sans selection:bg-primary-500/30 selection:text-primary-900 bg-[#FAFAFA] text-ink-900 overflow-x-hidden">
       
       <div id="mouse-aura" className="pointer-events-none fixed inset-0 z-[99] transition-opacity duration-300 hidden lg:block mix-blend-multiply" />
 
