@@ -36,7 +36,7 @@
 
 import type { Metadata } from "next";
 import { Poppins, Inter } from "next/font/google"; 
-import Script from "next/script"; // 1. Import the Next.js Script component
+import Script from "next/script"; // Import the Next.js Script component
 import "./globals.css";
 import { Toaster } from "react-hot-toast";
 import Header from "@/components/Header";
@@ -106,8 +106,7 @@ export const metadata: Metadata = {
   },
 };
 
-// Structured data (JSON-LD) — helps search engines understand what VAIDYA ERP is
-// and can surface rich results (pricing, ratings) rather than a plain blue link.
+// Structured data (JSON-LD)
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
@@ -147,21 +146,30 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-
-        <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "ynpcmhc9ix");
-</script>
         {/* SEO: structured data so search engines can understand VAIDYA ERP as a product */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
+      </head>
+      <body className={`${poppins.variable} ${inter.variable} font-sans antialiased bg-[#F6F9F8] text-slate-800`}>
+        
+        {/* Microsoft Clarity Script */}
+        <Script
+          id="microsoft-clarity"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(c,l,a,r,i,t,y){
+                  c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                  t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                  y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+              })(window, document, "clarity", "script", "ynpcmhc9ix");
+            `,
+          }}
+        />
 
-        {/* 2. Add Google Analytics Scripts Here */}
+        {/* Google Analytics Scripts */}
         <Script
           strategy="afterInteractive"
           src={`https://www.googletagmanager.com/gtag/js?id=G-7E6C8BZK9P`}
@@ -178,8 +186,7 @@ export default function RootLayout({
             `,
           }}
         />
-      </head>
-      <body className={`${poppins.variable} ${inter.variable} font-sans antialiased bg-[#F6F9F8] text-slate-800`}>
+
         <Header/>
         {children}
         <Toaster position="top-right" />
