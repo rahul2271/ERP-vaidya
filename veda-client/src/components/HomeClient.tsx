@@ -20,8 +20,8 @@ import {
 
 // --- Pricing (Strategically Adjusted for India Market) ---
 const pricing = {
-  basic: { monthly: 2499, annually: 24990, save: 4998 },    // ~₹80/day (Sweet spot for solo)
-  premium: { monthly: 5999, annually: 59990, save: 11998 }  // ~₹200/day (Polyclinics)
+  basic: { monthly: 9999, annually: 95990, save: 23998 },    // ~₹80/day (Sweet spot for solo)
+  premium: { monthly: 11999, annually: 115190, save: 28798 }  // ~₹200/day (Polyclinics)
 };
 
 // --- Data Arrays ---
